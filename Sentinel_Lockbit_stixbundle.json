@@ -1,0 +1,321 @@
+{
+  "id": "bundle--7fb470d7-c7a7-47b6-9c33-a9af618b544c",
+  "objects": [
+    {
+      "created": "2023-04-10T20:00:00.500000Z",
+      "first_observed": "2023-04-10T20:00:00.500000Z",
+      "id": "identity--ab02ae6b-5d0a-4bb6-9e5c-512a9a8b6a13",
+      "identity_class": "events",
+      "last_observed": "2023-04-10T20:00:00.500000Z",
+      "modified": "2023-04-10T20:00:00.500000Z",
+      "name": "Azure Sentinel",
+      "type": "identity"
+    },
+    {
+      "created": "2023-04-10T20:01:00.500000Z",
+      "first_observed": "2023-04-10T20:01:00.500000Z",
+      "id": "observed-data--61404a16-fa61-4cdd-b7aa-88549b4693af",
+      "last_observed": "2023-04-10T20:01:00.500000Z",
+      "modified": "2023-04-10T20:01:00.500000Z",
+      "number_observed": 8,
+      "objects": {
+        "0": {
+          "type": "ipv4-addr",
+          "value": "10.0.0.1"
+        },
+        "1": {
+          "type": "url",
+          "value": "https://info.openjdklab.xyz"
+        },
+        "2": {
+          "type": "domain-name",
+          "value": "info.openjdklab.xyz"
+        },
+        "3": {
+          "type": "ipv4-addr",
+          "value": "45.32.108.54"
+        },
+        "4": {
+          "dst_port": 443,
+          "dst_ref": "3",
+          "protocols": [
+            "https"
+          ],
+          "src_port": 57516,
+          "src_ref": "0",
+          "type": "network-traffic"
+        },
+        "5": {
+          "action": "ACCEPT",
+          "ip_refs": [
+            "0",
+            "3"
+          ],
+          "network_ref": "4",
+          "type": "x-oca-event"
+        },
+        "6": {
+          "hostname": "win10_helpdesk.sgl.local",
+          "ip_refs": [
+            "0"
+          ],
+          "type": "x-oca-asset"
+        },
+        "7": {
+          "deviceid": "win10_helpdesk",
+          "type": "x-deviceid"
+        },
+        "8": {
+          "action": "Network Connection Established",
+          "type": "x-oca-event"
+        }
+      },
+      "type": "observed-data"
+    },
+    {
+      "created": "2023-04-10T20:02:00.500000Z",
+      "first_observed": "2023-04-10T20:02:00.500000Z",
+      "id": "observed-data--4b3661f3-e06f-42ad-bf95-1a0b404f6537",
+      "last_observed": "2023-04-10T20:02:00.500000Z",
+      "modified": "2023-04-10T20:02:00.500000Z",
+      "number_observed": 4,
+      "objects": {
+        "0": {
+          "type": "ipv4-addr",
+          "value": "10.0.0.1"
+        },
+        "1": {
+          "hashes": {
+            "SHA-256": "cf8c1b234ad4d72dd6a455b82bf48ff16cd794aaefb682729b0151f0e1c374dd"
+          },
+          "name": "tryme.exe",
+          "type": "file"
+        },
+        "2": {
+          "type": "user-account",
+          "user_id": "Jsmith"
+        },
+        "3": {
+          "deviceid": "win10_helpdesk",
+          "type": "x-deviceid"
+        },
+        "4": {
+          "action": "File Created",
+          "type": "x-oca-event"
+        }
+      },
+      "type": "observed-data"
+    },
+    {
+      "created": "2023-04-10T20:03:00.500000Z",
+      "first_observed": "2023-04-10T20:03:00.500000Z",
+      "id": "observed-data--41f081f9-8817-4835-881d-5e10238e3667",
+      "last_observed": "2023-04-10T20:03:00.500000Z",
+      "modified": "2023-04-10T20:03:00.500000Z",
+      "number_observed": 4,
+      "objects": {
+        "0": {
+          "type": "ipv4-addr",
+          "value": "10.0.0.1"
+        },
+        "1": {
+          "hashes": {
+            "SHA-1": "729eb505c36c08860c4408db7be85d707bdcbf1b",
+            "SHA-256": "cf8c1b234ad4d72dd6a455b82bf48ff16cd794aaefb682729b0151f0e1c374dd"
+          },
+          "name": "mpclient.dll",
+          "type": "file"
+        },
+        "2": {
+          "type": "user-account",
+          "user_id": "Jsmith"
+        },
+        "3": {
+          "deviceid": "win10_helpdesk",
+          "type": "x-deviceid"
+        },
+        "4": {
+          "action": "File Created",
+          "type": "x-oca-event"
+        }
+      },
+      "type": "observed-data"
+    },
+    {
+      "created": "2023-04-10T20:04:00.500000Z",
+      "first_observed": "2023-04-10T20:04:00.500000Z",
+      "id": "observed-data--21ef2fe2-6381-4b7c-816a-4d7332942795",
+      "last_observed": "2023-04-10T20:04:00.500000Z",
+      "modified": "2023-04-10T20:04:00.500000Z",
+      "number_observed": 4,
+      "objects": {
+        "0": {
+          "type": "ipv4-addr",
+          "value": "10.0.0.1"
+        },
+        "1": {
+          "hashes": {
+            "SHA-256": "457936c28938616495836c472b3389a0870574bee6a5dc026d5bd14979c6202c"
+          },
+          "name": "lv.exe",
+          "pid": 54948,
+          "type": "process"
+        },
+        "2": {
+          "type": "user-account",
+          "user_id": "Jsmith"
+        },
+        "3": {
+          "deviceid": "win10_helpdesk",
+          "type": "x-deviceid"
+        },
+        "4": {
+          "action": "Process Created",
+          "type": "x-oca-event"
+        }
+      },
+      "type": "observed-data"
+    },
+    {
+      "created": "2023-04-10T20:05:00.500000Z",
+      "first_observed": "2023-04-10T20:05:00.500000Z",
+      "id": "observed-data--3961a5ad-1f54-4715-bf49-b8d91e0c10e8",
+      "last_observed": "2023-04-10T20:05:00.500000Z",
+      "modified": "2023-04-10T20:05:00.500000Z",
+      "number_observed": 4,
+      "objects": {
+        "0": {
+          "type": "ipv4-addr",
+          "value": "10.0.0.1"
+        },
+        "1": {
+          "hashes": {
+            "SHA-256": "c7e52cc6f1f659ec5d30473e89b7136216de5fbe53ec77a62f1a486d8ffe78ed"
+          },
+          "name": "clop.ransomware.exe",
+          "pid": 62485,
+          "type": "process"
+        },
+        "2": {
+          "type": "user-account",
+          "user_id": "Jsmith"
+        },
+        "3": {
+          "deviceid": "win10_helpdesk",
+          "type": "x-deviceid"
+        },
+        "4": {
+          "action": "Process Created",
+          "type": "x-oca-event"
+        }
+      },
+      "type": "observed-data"
+    },
+    {
+      "created": "2023-04-10T20:06:00.500000Z",
+      "first_observed": "2023-04-10T20:06:00.500000Z",
+      "id": "observed-data--36c6ba3d-4532-4094-af06-3731d00c8b1f",
+      "last_observed": "2023-04-10T20:06:00.500000Z",
+      "modified": "2023-04-10T20:06:00.500000Z",
+      "number_observed": 4,
+      "objects": {
+        "0": {
+          "type": "ipv4-addr",
+          "value": "10.0.0.1"
+        },
+        "1": {
+          "hashes": {
+            "SHA-256": "ae6307680ab7319f6e519e284d8445dc59be7a8626cff4d57b64c4223de7d32e"
+          },
+          "name": "nymeria.exe",
+          "pid": 34856,
+          "type": "process"
+        },
+        "2": {
+          "type": "user-account",
+          "user_id": "Jsmith"
+        },
+        "3": {
+          "deviceid": "win10_helpdesk",
+          "type": "x-deviceid"
+        },
+        "4": {
+          "action": "Process Created",
+          "type": "x-oca-event"
+        }
+      },
+      "type": "observed-data"
+    },
+    {
+      "created": "2023-04-10T20:07:00.500000Z",
+      "first_observed": "2023-04-10T20:07:00.500000Z",
+      "id": "observed-data--bde116bd-61f3-4585-86d9-3e8f21f11717",
+      "last_observed": "2023-04-10T20:07:00.500000Z",
+      "modified": "2023-04-10T20:07:00.500000Z",
+      "number_observed": 4,
+      "objects": {
+        "0": {
+          "type": "ipv4-addr",
+          "value": "10.0.0.5"
+        },
+        "1": {
+          "hashes": {
+            "SHA-256": "ecce335d9be7ef752827cc3525995ef1f25d97d77934f22619ec1065f41be6ba"
+          },
+          "name": "rogeradamsCV.doc",
+          "type": "file"
+        },
+        "2": {
+          "type": "user-account",
+          "user_id": "TWillis"
+        },
+        "3": {
+          "deviceid": "win10_networkadmin",
+          "type": "x-deviceid"
+        },
+        "4": {
+          "action": "File Created",
+          "type": "x-oca-event"
+        }
+      },
+      "type": "observed-data"
+    },
+    {
+      "created": "2023-04-10T20:08:00.500000Z",
+      "first_observed": "2023-04-10T20:08:00.500000Z",
+      "id": "observed-data--0e8fdd73-1d6d-4df1-8e59-5b663c075045",
+      "last_observed": "2023-04-10T20:08:00.500000Z",
+      "modified": "2023-04-10T20:08:00.500000Z",
+      "number_observed": 4,
+      "objects": {
+        "0": {
+          "type": "ipv4-addr",
+          "value": "10.0.0.5"
+        },
+        "1": {
+          "hashes": {
+            "SHA-256": "91514e6be3f581a77daa79e2a4905dcbdf6bdcc32ee0f713599a94d453a26fc1"
+          },
+          "name": "maze_rw.exe",
+          "pid": 54854,
+          "type": "process"
+        },
+        "2": {
+          "type": "user-account",
+          "user_id": "TWillis"
+        },
+        "3": {
+          "deviceid": "win10_networkadmin",
+          "type": "x-deviceid"
+        },
+        "4": {
+          "action": "Process Created",
+          "type": "x-oca-event"
+        }
+      },
+      "type": "observed-data"
+    }
+  ],
+  "spec_version": "2.0",
+  "type": "bundle"
+}
