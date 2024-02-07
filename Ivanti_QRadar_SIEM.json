@@ -1,0 +1,41 @@
+{
+   "type":"bundle",
+   "spec_version": "2.0",
+   "id":"bundle--fe949f27-8a4c-46c4-80b4-c4d474f7a2f2",
+   "objects":[
+      {
+         "name": "QRadar SIEM",
+         "identity_class": "events",
+         "type": "identity",
+         "id": "identity--6ea4cc0f-5c90-4ca2-bcc4-6f5f83ded3ac",
+         "created": "2024-01-30T10:06:15.000000Z",
+         "modified": "2024-01-30T10:06:15.000000Z",
+         "first_observed": "2024-01-30T10:06:15.000000Z",
+         "last_observed": "2031-01-30T10:06:15.000000Z"
+      },
+      {
+         "id":"observed-data--5fc07af6-5a15-4046-9721-b83dec336c7c",
+         "number_observed": 1,
+         "type":"observed-data",
+         "first_observed": "2023-07-25T10:07:15.000000Z", 
+         "last_observed": "2031-07-25T10:07:15.000000Z", 
+         "created":"2023-07-25T10:07:15.000000Z",
+         "modified":"2023-07-25T10:07:15.000000Z",
+         "objects":{
+            "0":{
+               "type":"ipv4-addr",
+               "value":"172.67.210.161"
+            },
+            "1":{
+               "type":"url",
+               "value":"symantke.com"
+            },
+            "2":{
+               "type":"file",
+               "hashes": {
+                   "MD5": "d0c7a334a4d9dcd3c6335ae13bee59ea"
+               }
+            }        
+      } }
+   ]
+}
